@@ -44,4 +44,7 @@ def add_classmate(e):
     classmates.append(new_member)
 
     # Update list
-    show_list
+    if new_member:
+        display("Classmate added, check Show List again.", target="output")
+    else:
+        show_list
