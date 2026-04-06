@@ -10,7 +10,7 @@ class Classmate:
 
     # Introduce Method
     def introduce(self):
-        return(f"Hello, I am {self.name}, I'm from {self.section}, and I like {self.favorite_subject}") # Default Message
+        return(f"Hello! I am {self.name} from {self.section}. I like {self.favorite_subject}.") # Default Message
 
 # Objects of Class: Classmate
 c1 = Classmate("Sean", "Topaz", "PE")
@@ -39,10 +39,9 @@ def add_classmate(e):
     section = document.getElementById('section').value
     favorite_subject = document.getElementById('subject').value
 
+    # Create new classmate
     new_member = Classmate(name, section, favorite_subject)
     classmates.append(new_member)
 
-    if new_member:
-        display("Classmate added, click Show List again.", target="output")
-    else:
-        show_list
+    # Update list
+    show_list
