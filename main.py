@@ -1,9 +1,9 @@
 # My Classmates
 from pyscript import display, document # pyright: ignore[reportMissingImports]
 
-
+# Class to store classmate information
 class Classmate:
-    def __init__(self, name, section, favorite_subject):
+    def __init__(self, name, section, favorite_subject): # Assign values to attributes
         self.name = name
         self.section = section
         self.favorite_subject = favorite_subject
@@ -22,7 +22,7 @@ c5 = Classmate("Calvin", "Topaz", "English")
 # List of Classmates
 classmates = [c1, c2, c3, c4, c5]
 
-# Show List of Classmates
+# Display a list of Classmates
 def show_list(e):
     document.getElementById('output').innerHTML = "" # Clear Output
 
@@ -30,7 +30,7 @@ def show_list(e):
     for i in classmates:
         display(i.introduce(), target="output") 
 
-# Add Classmate towards the List
+# Adds a new classmate from input
 def add_classmate(e):
     document.getElementById('output').innerHTML = "" # Clear Output
 
